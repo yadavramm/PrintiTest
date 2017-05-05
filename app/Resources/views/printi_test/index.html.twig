@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h3>Symfony Repositories List</h3>
+    <br>
+    <ol>
+    {% for repository in repositories %}
+        <li>Name: {{ repository['name'] }}<br>Url: {{ repository['html_url'] }}</li><br>
+    {% endfor %}
+    </ol>
+{% endblock %}
